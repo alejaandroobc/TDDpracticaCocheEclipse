@@ -1,12 +1,14 @@
-import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TestCoche {
 
 	@Test
 	public void test_crear_coche() {
-		Coche nueviCoche = new Coche();
+		Coche nuevoCoche = new Coche();
+		Assertions.assertEquals(0, nuevoCoche.velocidad);
+		
 	}
 
 }
